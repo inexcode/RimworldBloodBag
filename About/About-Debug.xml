@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>BloodTypes - Dev Build</name>
+	<author>AliceCecil</author>
+	<targetVersion>0.19.2009</targetVersion>
+	<description>Adds blood types, transfusion and other bonuses and mishaps related there in
+
+		Blood Type Compatibility
+		Your ABO blood type is based on the presence or absence of the A and B antigens on your red blood cells. The A blood type has only the A antigen and the B blood type has only the B antigen. The AB blood type has both A and B antigens, and the O blood type has neither A nor B antigen.
+
+		By the time you are six months old, you naturally develop antibodies against the antigens your red blood cells lack. For instance, a person with A blood type will have anti-B antibodies, and a person with B blood type will have anti-A antibodies.  If you have type A blood, you cannot receive B blood because your body's anti-B antibodies will fight the B blood's B antigens. It is crucial we have all blood types available to our patients.
+
+
+
+
+		Blood Type	Can receive
+		O-	O+	B-	B+	A-	A+	AB-	AB+
+		O-	Yes
+		O+	Yes	Yes
+		B-	Yes	 	Yes
+		B+	Yes	Yes	Yes	Yes
+		A-	Yes	 	 	 	Yes
+		A+	Yes	Yes	 	 	Yes	Yes
+		AB-	Yes	 	Yes	 	Yes	 	Yes
+		AB+	Yes	Yes	Yes	Yes	Yes	Yes	Yes	Yes
+		
+		from https://www.bswhealth.com/patient-tools/blood-center/Pages/blood-type-genetics-and-compatibility.aspx
+		
+(This is the dev version of BloodTypes. The release version of About.xml is available for editing at About/About-Release.xml. Edits made on this file or on the temporary About/About.xml won't show up on the release version. Use VisualStudio to build a "Release" version of this mod when ready to upload your mod!)</description>
+	<url>https://steamcommunity.com/id/AliceCecil/myworkshopfiles/?appid=294100</url>
+</ModMetaData>
