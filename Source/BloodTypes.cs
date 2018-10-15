@@ -52,7 +52,7 @@ namespace BloodTypes
             }
         }
     }
-    public class BloodType
+    public class BloodType: IExposable
     {
         public BloodTypes Primary, Secondary;
         public Rh RhPrimary, RhSecondary;
@@ -106,6 +106,14 @@ namespace BloodTypes
         public override string ToString()
         {
             return ExpressedBloodType().ToString() + ((RhExpressed()==Rh.Pos)?"+":"-");
+        }
+
+        public void ExposeData()
+        {
+            Scribe_Values.Look(ref Primary, "ABO1");
+            Scribe_Values.Look(ref Secondary, "ABO2");
+            Scribe_Values.Look(ref RhPrimary, "RH1");
+            Scribe_Values.Look(ref RhSecondary, "RH2");
         }
 
         public static BloodType Random()

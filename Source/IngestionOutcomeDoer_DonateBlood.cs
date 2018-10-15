@@ -12,7 +12,7 @@ namespace BloodTypes
             if (ingested is BloodBagThingWithComps)
             {
                 var bag = (BloodBagThingWithComps) ingested;
-                if (pawn.GetBloodType().BloodType.CanGetBlood(bag.bloodType))
+                if (pawn.GetBloodType().BloodType.CanGetBlood(bag.BloodType))
                     base.DoIngestionOutcomeSpecial(pawn, ingested);
                 else
                 {

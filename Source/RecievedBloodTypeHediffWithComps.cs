@@ -29,5 +29,11 @@ namespace BloodTypes
             _index++;
             base.PostTick();
         }
+        
+        public override void ExposeData()
+        {
+            Scribe_Deep.Look(ref BloodType, "BloodType");
+            base.ExposeData();
+        }
     }
 }
