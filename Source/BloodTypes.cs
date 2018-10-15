@@ -112,10 +112,10 @@ namespace BloodTypes
         {
             return new BloodType()
             {
-                Primary = (BloodTypes) (Rand.Int % 3),
-                Secondary = (BloodTypes) (Rand.Int % 3),
-                RhPrimary = (Rh) (Rand.Int % 2), 
-                RhSecondary = (Rh) (Rand.Int % 2)
+                Primary = (BloodTypes) (Rand.Value * 3),
+                Secondary = (BloodTypes) (Rand.Value * 3),
+                RhPrimary = (Rh) (Rand.Value * 2), 
+                RhSecondary = (Rh) (Rand.Value * 2)
             };
         }
         

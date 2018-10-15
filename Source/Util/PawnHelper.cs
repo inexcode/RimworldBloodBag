@@ -2,7 +2,7 @@
 
 namespace BloodTypes
 {
-    static internal class PawnHelper
+    static class PawnHelper
     {
         public static bool IsHaveHediff(Pawn pawn, HediffDef what)
         {

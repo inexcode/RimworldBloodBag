@@ -6,12 +6,13 @@
 
     <HediffDef ParentName="BloodType">
         <defName>BloodType</defName>
-        <hediffClass>BloodType.BloodTypeHediffWithComps</hediffClass>
+        <label>Blood Type</label>
+        <hediffClass>BloodTypes.BloodTypeHediffWithComps</hediffClass>
     </HediffDef>
 
     <HediffDef ParentName="BloodType">
         <defName>GotBlood</defName>
-        <hediffClass>BloodType.RecievedBloodTypeHediffWithComps</hediffClass>
+        <hediffClass>BloodTypes.RecievedBloodTypeHediffWithComps</hediffClass>
         <stages>
             <li>
                 <capMods>
@@ -44,6 +45,7 @@
         <stages>
             <li>
                 <label>needed donated blood</label>
+                <description>I needed blood and we had extra to give me.</description>
                 <baseMoodEffect>1</baseMoodEffect>
             </li>
         </stages>
@@ -51,7 +53,7 @@
 
     <HediffDef ParentName="BloodType">
         <defName>GaveBlood</defName>
-        <hediffClass>BloodType.RecievedBloodTypeHediffWithComps</hediffClass>
+        <hediffClass>BloodTypes.RecievedBloodTypeHediffWithComps</hediffClass>
         <stages>
             <li>
                 <capMods>
@@ -89,7 +91,7 @@
     <ThingDef Name="BloodBag" ParentName="DrugBase">
         <defName>BloodBag</defName>
         <label>Blood in a bag</label>
-        <thingClass>BloodType.BloodBagThingWithComps</thingClass>
+        <thingClass>BloodTypes.BloodBagThingWithComps</thingClass>
         <graphicData>
             <texPath>Things/Item/Drug/Ambrosia</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -99,12 +101,16 @@
         <statBases>
             <MarketValue>200</MarketValue>
             <Mass>1</Mass>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <Flammability>0.001</Flammability>
+            <MaxHitPoints>60</MaxHitPoints>
         </statBases>
         <techLevel>Neolithic</techLevel>
         <ingestible>
+            <foodType>Processed, Fluid</foodType>
             <drugCategory>Medical</drugCategory>
             <outcomeDoers>
-                <li Class="IngestionOutcomeDoer_DonateBlood">
+                <li Class="BloodTypes.IngestionOutcomeDoer_DonateBlood">
                     <hediffDef>GotBlood</hediffDef>
                 </li>
             </outcomeDoers>
@@ -114,15 +120,27 @@
                 <daysToRotStart>21</daysToRotStart>
                 <rotDestroys>true</rotDestroys>
             </li>
+            <li Class="CompProperties_Drug">
+                <chemical>Blood</chemical>
+                <addictiveness>0.00</addictiveness>
+                <needLevelOffset>1.00</needLevelOffset>
+                <listOrder>1012</listOrder>
+            </li>
         </comps>
-        <nurseable>true</nurseable>
+        <tickerType>Rare</tickerType>
     </ThingDef>
+
+    <ChemicalDef>
+        <defName>Blood</defName>
+        <label>Blood</label>
+        <canBinge>false</canBinge>
+    </ChemicalDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>DonateBlood</defName>
         <label>Extract Blood Bag</label>
         <description>Pull out a liter of blood</description>
-        <workerClass>BloodType.MakeBloodBag</workerClass>
+        <workerClass>BloodTypes.MakeBloodBag</workerClass>
         <jobString>extracting blood.</jobString>
         <workAmount>2500</workAmount>
         <skillRequirements>
@@ -141,7 +159,7 @@
 
     <ThoughtDef>
         <defName>BloodWorker</defName>
-        <workerClass>BloodType.ThoughtWorker_Apply</workerClass>
+        <workerClass>BloodTypes.ThoughtWorker_Apply</workerClass>
         <validWhileDespawned>true</validWhileDespawned>
         <stages>
             <li>

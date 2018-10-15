@@ -6,14 +6,15 @@ namespace BloodTypes
     {
         public BloodType bloodType;
 
-        public override string LabelShort =>
-            base.LabelShort + (bloodType != null ? "[" + bloodType + "]" : "[Universal]");
+        public override string Label =>
+            base.Label + (bloodType != null ? "[" + bloodType + "]" : "[Universal]");
 
+        
         public override bool CanStackWith(Thing other)
         {
             return other is BloodBagThingWithComps withComps
                    && base.CanStackWith(withComps) 
-                   && withComps.bloodType == bloodType;
+                   && withComps?.bloodType == bloodType;
         }
     }
 }

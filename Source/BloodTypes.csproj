@@ -58,8 +58,10 @@
     <Compile Include="BloodBagThingWithComps.cs" />
     <Compile Include="BloodTypeHediffWithComps.cs" />
     <Compile Include="BloodTypes.cs" />
+    <Compile Include="Harmony\AttachRecepies.cs" />
+    <Compile Include="Harmony\ModRoot.cs" />
     <Compile Include="ThoughtWorker_Apply.cs" />
-    <Compile Include="Util\HediffDefOf.cs" />
+    <Compile Include="Util\DefOfs.cs" />
     <Compile Include="IngestionOutcomeDoer_DonateBlood.cs" />
     <Compile Include="MakeBloodBag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

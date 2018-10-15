@@ -6,6 +6,6 @@ namespace BloodTypes
     {
         public BloodType BloodType;
 
-        public override string LabelBase => BloodType.ToString();
+        public override string LabelInBrackets => BloodType?.ToString();
     }
 }
