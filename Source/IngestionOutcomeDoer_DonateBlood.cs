@@ -12,14 +12,13 @@ namespace BloodTypes
             if (ingested is BloodBagThingWithComps)
             {
                 var bag = (BloodBagThingWithComps) ingested;
-                if (pawn.GetBloodType().BloodType.CanGetBlood(bag.BloodType))
-                    base.DoIngestionOutcomeSpecial(pawn, ingested);
-                else
+                if (!pawn.GetBloodType().BloodType.CanGetBlood(bag.BloodType))
                 {
                     //TODO blood incompatibility, MVP FoodPoison
                     var d = pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
                     d.Severity = Rand.Value / 3f;
                 }
+                base.DoIngestionOutcomeSpecial(pawn, ingested);
             }
             
         }

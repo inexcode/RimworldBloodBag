@@ -21,7 +21,7 @@ namespace BloodTypes
         public override void PostTick()
         {
             
-            _index %= 25791;
+            _index %= 2579;
             if (_index == 0)
             {
                 pawn.Clot();
