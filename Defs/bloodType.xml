@@ -93,9 +93,8 @@
         <label>Blood in a bag</label>
         <thingClass>BloodTypes.BloodBagThingWithComps</thingClass>
         <graphicData>
-            <texPath>Things/Item/Drug/Ambrosia</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <color>(131, 34, 34, 210)</color>
+            <texPath>dianneteabloodBag</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <rotatable>false</rotatable>
         <statBases>
