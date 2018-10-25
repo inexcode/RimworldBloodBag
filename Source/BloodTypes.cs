@@ -105,7 +105,7 @@ namespace BloodTypes
 
         public override string ToString()
         {
-            return ExpressedBloodType().ToString() + ((RhExpressed()==Rh.Pos)?"+":"-");
+            return ExpressedBloodType() + ((RhExpressed()==Rh.Pos)?"+":"-");
         }
 
         public void ExposeData()
@@ -140,6 +140,16 @@ namespace BloodTypes
                 RhPrimary = new []{other.RhPrimary, this.RhPrimary}.RandomElement(),  
                 RhSecondary = new []{other.RhSecondary, this.RhSecondary}.RandomElement()
             };
+        }
+
+        public bool Equals(BloodType other) => ExpressedBloodType().Equals(other.ExpressedBloodType()) && RhExpressed().Equals(other.RhExpressed()) ;
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((BloodType) obj);
         }
     }
 }

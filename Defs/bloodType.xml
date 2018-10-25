@@ -30,7 +30,7 @@
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>
-                    <min>7500</min>
+                    <min>25000</min>
                     <max>75000</max>
                 </disappearsAfterTicks>
             </li>
@@ -59,7 +59,7 @@
                 <capMods>
                     <li>
                         <capacity>BloodPumping</capacity>
-                        <offset>-0.1</offset>
+                        <offset>-0.1777</offset>
                     </li>
                 </capMods>
             </li>
@@ -67,7 +67,7 @@
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>
-                    <min>2500</min>
+                    <min>25000</min>
                     <max>75000</max>
                 </disappearsAfterTicks>
             </li>
@@ -111,6 +111,8 @@
             <outcomeDoers>
                 <li Class="BloodTypes.IngestionOutcomeDoer_DonateBlood">
                     <hediffDef>GotBlood</hediffDef>
+                    <severity>0.15</severity>
+                    <toleranceChemical>Blood</toleranceChemical>
                 </li>
             </outcomeDoers>
         </ingestible>
@@ -145,9 +147,6 @@
         <skillRequirements>
             <Medicine>5</Medicine>
         </skillRequirements>
-        <appliedOnFixedBodyParts>
-            <li>Heart</li>
-        </appliedOnFixedBodyParts>
         <addsHediff>GaveBlood</addsHediff>
         <anesthetize>false</anesthetize>
         <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>

@@ -8,7 +8,7 @@ namespace BloodTypes
     {
         public BloodType BloodType;
 
-        public override string LabelInBrackets => BloodType.ToString();
+        public override string LabelInBrackets => BloodType?.ToString();
 
         public override void PostAdd(DamageInfo? dinfo)
         {
