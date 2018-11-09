@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>BloodTypes + BloodBag</name>
-	<author>AliceCecil</author>
+	<name>[FIXED] BloodTypes + BloodBag</name>
+	<author>Community fork of AliceCecil</author>
 	<targetVersion>1.0.0</targetVersion>
-	<description>Adds blood types, transfusion and other bonuses and mishaps related there in
+	<description>
+		It's a fixed emergency fork of Public Domain version of BloodTypes + BloodBag by AliceTries.
+		Use this to keep your saves safe.
+		
+		New description is in progress.
+		
+		
+		Original decripton:
+		
+		Adds blood types, transfusion and other bonuses and mishaps related there in
 
 		Blood Type Compatibility
 		Your ABO blood type is based on the presence or absence of the A and B antigens on your red blood cells. The A blood type has only the A antigen and the B blood type has only the B antigen. The AB blood type has both A and B antigens, and the O blood type has neither A nor B antigen.
@@ -18,5 +27,5 @@
 		
 		
 		from https://www.bswhealth.com/patient-tools/blood-center/Pages/blood-type-genetics-and-compatibility.aspx</description>
-	<url>https://steamcommunity.com/id/AliceCecil/myworkshopfiles/?appid=294100</url>
+	<url>https://github.com/inexcode/RimworldBloodBag</url>
 </ModMetaData>

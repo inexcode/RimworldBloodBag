@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>BloodTypes</name>
-	<author>AliceCecil</author>
-	<targetVersion>0.19.2009</targetVersion>
+	<author>Community fork of AliceCecil</author>
+	<targetVersion>1.0.0</targetVersion>
 	<description>Adds blood types, transfusion and other bonuses and mishaps related there in</description>
-	<url>https://steamcommunity.com/id/AliceCecil/myworkshopfiles/?appid=294100</url>
+	<url>https://github.com/inexcode/RimworldBloodBag</url>
 </ModMetaData>
