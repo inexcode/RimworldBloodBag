@@ -19,6 +19,8 @@ namespace BloodTypes.Harmony
             foreach (var humanoidRace in humanoidRaces)
             {
                 Log.Message("Adding in draw blood");
+                if (humanoidRace.recipes == null)
+                    humanoidRace.recipes = new List<RecipeDef>();
                 humanoidRace.recipes.Add(DonateBlood);
             }
         }
