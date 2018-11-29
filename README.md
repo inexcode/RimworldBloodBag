@@ -13,16 +13,16 @@
          alt="RimWorld 1.0">
   </a>
   <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1560792909">
-    <img src="https://img.shields.io/steam/subscriptions/1560792909.svg">
+    <img src="https://img.shields.io/steam/subscriptions/1560792909.svg?logo=steam&logoColor=white">
+  </a>
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1560792909">
+    <img src="https://img.shields.io/steam/favorites/1560792909.svg?logo=steam&logoColor=white">
+  </a>
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1560792909">
+    <img src="https://img.shields.io/steam/views/1560792909.svg?logo=steam&logoColor=white">
   </a>
   <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1560792909">
       <img src="https://img.shields.io/steam/size/1560792909.svg">
-  </a>
-  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1560792909">
-    <img src="https://img.shields.io/steam/favorites/1560792909.svg">
-  </a>
-  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1560792909">
-    <img src="https://img.shields.io/steam/views/1560792909.svg">
   </a>
 </p>
 
